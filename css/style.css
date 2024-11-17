@@ -26,11 +26,10 @@ body {
 }
 
 .cuadro .front {
-    background-color: rgb(80, 12, 97);
     transform: rotateY(0deg); /* La cara frontal comienza en 0deg */
-    /*background-image: url('../img/sol_de_tarde.jpg'); /* Imagen de fondo */
-    /*background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    /*background-position: center; /* Centra la imagen dentro del contenedor */
+    background-image: url('../img/sol_de_tarde.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen dentro del contenedor */
 }
 
 .cuadro .back {
