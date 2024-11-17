@@ -3,13 +3,9 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
 }
-.section {
-    height: 100vh; /* Cada sección ocupa toda la pantalla */
-}
 
 .cuadro {
     position: relative;
-    width: 60vh;
     height: 40vh;
     perspective: 1000px; /* Asegura que la perspectiva se aplique al elemento principal */
 }
