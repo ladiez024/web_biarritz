@@ -12,7 +12,7 @@ body {
 
 @media (max-width: 576px) {
     .margen{
-        margin-top: 0.5rem; /* Ajusta el valor como necesites */
+        margin-top: 1rem; /* Ajusta el valor como necesites */
     }
 }
 
