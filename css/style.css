@@ -131,7 +131,7 @@ body {
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 576px) {
     .numero {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .numero_sep {
         font-size: 5rem;
