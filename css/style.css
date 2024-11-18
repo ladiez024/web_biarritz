@@ -128,20 +128,32 @@ body {
 }
 
 /*INTRODUCCION*/
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 576px) {
+/* Para pantallas pequeñas (375px específicamente) */
+@media (max-width: 376px) {
     .numero {
-        font-size: 3rem;
+        font-size: 3rem; /* Ajusta específicamente para 375px */
     }
     .numero_sep {
         font-size: 5rem;
     }
-
     .titulo {
         font-size: 1.5rem; 
     }
 }
 
+/* Para pantallas pequeñas pero mayores a 375px */
+@media (min-width: 376px) and (max-width: 576px) {
+    .numero {
+        font-size: 4rem;
+    }
+    .numero_sep {
+        font-size: 6rem;
+    }
+
+    .titulo {
+        font-size: 1.8rem; 
+    }
+}
 /* Para pantallas grandes (desktops) */
 @media (min-width: 1024px) {
     .numero{
