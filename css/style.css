@@ -22,11 +22,30 @@ body {
 }
 
 .cuadro .front {
-    transform: rotateY(0deg); /* La cara frontal comienza en 0deg */
-    background-image: url('../img/sol_de_tarde.jpg'); /* Imagen de fondo */
-    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
-    background-position: center; /* Centra la imagen dentro del contenedor */
+    transform: rotateY(0deg);
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Necesario para posicionar elementos hijos */
 }
+
+.cuadro .front h1 {
+    position: absolute; /* Permite ubicar el texto dentro del contenedor */
+    bottom: 10px; /* Ajusta según el espacio que quieras desde abajo */
+    left: 10px; /* Ajusta según el espacio que quieras desde la izquierda */
+    margin: 0;
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: white; /* Asegúrate de que el texto sea legible */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para mejor contraste */
+}
+
+.cuadro1 .front {
+    background-image: url('../img/sol_de_tarde.jpg');
+}
+
+.cuadro2 .front {
+    background-image: url('../img/verano.jpg');
+}
+
 
 .cuadro .back {
     background-color: rgb(142, 194, 21);
