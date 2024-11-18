@@ -41,5 +41,37 @@ window.addEventListener('resize', () => {
         h5 = document.querySelector('.subcabecera'); // Reasignamos para el nuevo elemento
     }
 });
-
+//imagenes
+function expandCard(card,sectionId) {
+    const cards = document.querySelectorAll('.menu-item');
     
+     // Verificar si la tarjeta ya está expandida
+     if (card.style.width === '60vw') {
+        // Si está expandida, redirigir a la sección específica
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+        return; // Detener la ejecución del resto de la función
+    }
+
+    // Restablece todas las tarjetas al tamaño original y la clase rounded-pill
+    cards.forEach(c => {
+        c.style.width = '10vw'; // Restablece la anchura de todas las tarjetas
+        c.querySelector('.text').classList.add('d-none'); // Oculta el texto
+        c.querySelector('.text').classList.remove('d-block');
+        c.classList.remove('rounded-5'); // Elimina la clase rounded-5
+        c.classList.add('rounded-pill'); // Vuelve a agregar la clase rounded-pill
+    });
+
+    // Cambia la anchura de la tarjeta seleccionada
+    card.style.width = '60vw';
+    card.querySelector('.text').classList.remove('d-none'); // Muestra el texto
+    card.querySelector('.text').classList.add('d-block');
+    // Cambia la clase a rounded-5 para la tarjeta seleccionada
+    card.classList.remove('rounded-pill');
+    card.classList.add('rounded-5');
+}

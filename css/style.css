@@ -3,10 +3,22 @@ body {
     overflow-x: hidden;
 }
 .capitulo1{
-    background-color: #6493a4;
+    background-color: #3b92a3;
 }
 .capitulo2{
     background-color: #57a5b5;
+}
+.capitulo3{
+    background-color: #adccd2;
+}
+.capitulo4{
+    background-color: #a1c4d4;
+}
+.capitulo5{
+    background-color: #b7cbe7;
+}
+.obra1{
+    background-color: #523b30;
 }
  /* Estilo personalizado para limitar la altura */
 .img-custom {
@@ -69,7 +81,6 @@ body {
 .cuadro2 .front {
     background-image: url('../img/verano.jpg');
 }
-
 
 .cuadro .back {
     background-color: rgb(142, 194, 21);
@@ -190,7 +201,18 @@ body {
 
 /*INTRODUCCION*/
 /* Para pantallas pequeñas (375px específicamente) */
-@media (max-width: 376px) {
+@media (max-width: 321px) {
+    .numero {
+        font-size: 2.5rem; /* Ajusta específicamente para 375px */
+    }
+    .numero_sep {
+        font-size: 4.4rem;
+    }
+    .titulo {
+        font-size: 1.3rem; 
+    }
+}
+@media (min-width: 321px) and (max-width: 376px) {
     .numero {
         font-size: 3rem; /* Ajusta específicamente para 375px */
     }
@@ -227,4 +249,16 @@ body {
     .titulo {
         font-size: 5rem; /* Tamaño estándar para títulos en escritorios */
     }
+}
+
+.menu{
+    height: 50vh;
+}
+.menu-item{
+    height: 50vh;
+    width: 10vw;
+    background-image: url('../img/paris-salon.jpg');
+    background-size: cover; /* Escala la imagen para cubrir todo el elemento */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
 }
