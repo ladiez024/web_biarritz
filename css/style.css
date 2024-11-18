@@ -116,13 +116,16 @@ body {
 
 @font-face {
     font-family: 'Soria';
-    src: local('Soria Normal');
+    src: url('https://example.com/fonts/soria-regular.woff2') format('woff2'),
+         url('https://example.com/fonts/soria-regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'League Gothic';
-    src: local('League Gothic Normal');
+    src: url('https://example.com/fonts/league-gothic.woff2') format('woff2'),
+         url('https://example.com/fonts/league-gothic.woff') format('woff');
 }
+
 
 /* Establecer las fuentes */
 body {
