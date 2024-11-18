@@ -113,27 +113,8 @@ body {
 }
 
 /*LETRAS*/
-
-@font-face {
-    font-family: 'Soria';
-    src: url('https://example.com/fonts/soria-regular.woff2') format('woff2'),
-         url('https://example.com/fonts/soria-regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'League Gothic';
-    src: url('https://example.com/fonts/league-gothic.woff2') format('woff2'),
-         url('https://example.com/fonts/league-gothic.woff') format('woff');
-}
-
-
-/* Establecer las fuentes */
-body {
-    font-family: 'Soria', sans-serif; /* Usa Soria si está disponible, de lo contrario usa sans-serif */
-}
-
-h1,h2, h3 {
-    font-family: 'League Gothic', serif; /* Usa League Gothic para los encabezados */
+.numero, .numero_sep,.titulo,h1,h2, h3{
+    font-family: 'Bebas Neue', sans-serif; /* Incluye una fuente de respaldo como sans-serif */
 }
 
 .numero{
@@ -144,11 +125,6 @@ h1,h2, h3 {
 }
 .sorolla{
     color:#07517f;
-}
-
-.numero, .numero_sep,.titulo {
-    font-family: 'Bebas Neue', sans-serif; /* Incluye una fuente de respaldo como sans-serif */
-    font-size: 3rem; /* Ajusta el tamaño de la fuente según necesidad */
 }
 
 /*INTRODUCCION*/
