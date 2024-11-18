@@ -33,10 +33,10 @@ body {
     transform: rotateY(180deg); /* La cara posterior comienza en 180deg, invisible inicialmente */
 }
 
-.cuadro:hover .front {
-    transform: rotateY(180deg); /* Al pasar el mouse, rota la cara frontal */
+.cuadro.active .front {
+    transform: rotateY(180deg); /* Rota la cara frontal al activarse */
 }
 
-.cuadro:hover .back {
-    transform: rotateY(0deg); /* Al pasar el mouse, la cara posterior rota a 0deg */
+.cuadro.active .back {
+    transform: rotateY(0deg); /* Muestra la cara trasera al activarse */
 }
