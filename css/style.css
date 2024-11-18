@@ -136,11 +136,40 @@ h1,h2, h3 {
     font-family: 'League Gothic', serif; /* Usa League Gothic para los encabezados */
 }
 
-
-/*INTRODUCCION*/
 .numero{
-    font-size: 12rem;
+    color:#fcac3c;
 }
-.titulo{
-    font-size: 5rem;
+.numero_sep{
+    color:#fcd48c;
+}
+.sorolla{
+    color:#07517f;
+}
+/*INTRODUCCION*/
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .numero {
+        font-size: 4rem;
+    }
+    .numero_sep {
+        font-size: 6rem;
+    }
+
+    .titulo {
+        font-size: 2rem; 
+    }
+}
+
+/* Para pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+    .numero{
+        font-size: 12rem; /* Tamaño grande para pantallas de escritorio */
+    }
+    .numero_sep {
+        font-size: 14rem;
+    }
+
+    .titulo {
+        font-size: 5rem; /* Tamaño estándar para títulos en escritorios */
+    }
 }
