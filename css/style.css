@@ -20,10 +20,18 @@ body {
         margin-top: 1rem; /* Ajusta el valor como necesites */
     }
 }
-
+@media (max-width: 576px) {
+    .cuadro{
+        height: 40vh;
+    }
+}
+@media (min-width: 1024px) {
+    .cuadro{
+        height: 60vh;
+    }
+}
 .cuadro {
     position: relative;
-    height: 40vh;
     perspective: 1000px; /* Asegura que la perspectiva se aplique al elemento principal */
 }
 
@@ -50,7 +58,7 @@ body {
     left: 10px; /* Ajusta según el espacio que quieras desde la izquierda */
     margin: 0;
     font-size: 1.5rem; /* Tamaño del texto */
-    color: white; /* Asegúrate de que el texto sea legible */
+    color:white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para mejor contraste */
 }
 
@@ -113,7 +121,60 @@ body {
 }
 
 /*LETRAS*/
-.numero, .numero_sep,.titulo,h1,h2, h3{
+.fira-sans-thin {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .fira-sans-extralight {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .fira-sans-light {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .fira-sans-regular {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .fira-sans-medium {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .fira-sans-semibold {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .fira-sans-bold {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .fira-sans-extrabold {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .fira-sans-black {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+.numero, .numero_sep,.titulo{
     font-family: 'Bebas Neue', sans-serif; /* Incluye una fuente de respaldo como sans-serif */
 }
 
