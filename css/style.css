@@ -145,6 +145,12 @@ h1,h2, h3 {
 .sorolla{
     color:#07517f;
 }
+
+.numero, .numero_sep,.titulo {
+    font-family: 'Bebas Neue', sans-serif; /* Incluye una fuente de respaldo como sans-serif */
+    font-size: 3rem; /* Ajusta el tamaño de la fuente según necesidad */
+}
+
 /*INTRODUCCION*/
 /* Para pantallas pequeñas (móviles) */
 @media (max-width: 576px) {
