@@ -214,7 +214,7 @@ body {
 /* Para pantallas pequeñas (375px específicamente) */
 @media (max-width: 321px) {
     .numero {
-        font-size: 2rem; /* Ajusta específicamente para 375px */
+        font-size: 2.5rem; /* Ajusta específicamente para 375px */
     }
     .numero_sep {
         font-size: 4.4rem;
@@ -225,7 +225,7 @@ body {
 }
 @media (min-width: 321px) and (max-width: 376px) {
     .numero {
-        font-size: 2.5rem; /* Ajusta específicamente para 375px */
+        font-size: 3rem; /* Ajusta específicamente para 375px */
     }
     .numero_sep {
         font-size: 5rem;
