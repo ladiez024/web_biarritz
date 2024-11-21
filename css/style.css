@@ -269,7 +269,15 @@ body {
 .menu-item{
     height: 50vh;
     width: 10vw;
-    background-image: url('../img/paris-salon.jpg');
+}
+.img-item{
+    background-image: url('../img/verano.jpg');
+    background-size: cover; /* Escala la imagen para cubrir todo el elemento */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+}
+.img2-item{
+    background-image: url('../img/galeria_petit.jpg');
     background-size: cover; /* Escala la imagen para cubrir todo el elemento */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita repeticiones */
@@ -283,4 +291,9 @@ body {
 .acordeon{
     height: 40vh;
     width: 60vh;
+}
+
+.artes{
+    height: 33vh;
+    width: 20vh;
 }
