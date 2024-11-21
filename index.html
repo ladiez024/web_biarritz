@@ -6,8 +6,8 @@
     <title>Document</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="/web_biarritz/css/style.css">
-    <!--<link rel="stylesheet" href="../css/style.css">-->
+    <!--<link rel="stylesheet" href="/web_biarritz/css/style.css">-->
+    <link rel="stylesheet" href="../css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,10 +73,12 @@
                 <div class="col-lg-5 col-sm-12">
                     <div class="cuadro cuadro1">
                         <div class="front rounded-4">
-                            <h1 class="fira-sans-semibold">Sol de tarde</h1>
+                            <h1 class="fira-sans-semibold">Sol de la tarde</h1>
                         </div>
-                        <div class="back rounded-4">
-                            <h1>B</h1>
+                        <div class="back rounded-4 p-4">
+                            <h6 class="fira-sans-regular texto">La obra "Sol de la tarde", realizada en 1903, se encuentra en la colección de la Hispanic Society of America. En esta pintura, elementos 
+                                como el movimiento de las velas, la figura de los bueyes y la presencia de los pescadores sirven como excusa 
+                                para la verdadera obsesión de Sorolla: capturar la luz cambiante del Mediterráneo en distintas horas del día. El título revela el auténtico tema de la obra</h6>
                         </div>
                     </div>
                 </div>
@@ -85,42 +87,55 @@
                         <div class="front rounded-4">
                             <h1 class="fira-sans-semibold">Verano</h1>
                         </div>
-                        <div class="back rounded-4">
-                            <h1>B</h1>
+                        <div class="back rounded-4 p-4">
+                            <h6 class="fira-sans-regular texto">La obra "Verano", realizada en 1904, ubicada en el Museo Nacional de Bellas Artes de Cuba, es un destacado ejemplo del luminismo de Joaquín Sorolla. 
+                                Representa una escena costera mediterránea llena de luz vibrante, donde bañistas y paisaje se funden
+                                 en una atmósfera cálida y dinámica. Con su pincelada suelta y tonos dorados y azulados, Sorolla captura la esencia del verano, elevando lo cotidiano a una expresión poética y envolvente.</h6>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row mt-3 d-flex justify-content-center align-item-center">
                 <div class ="col-lg-4 col-sm-12 d-flex flex-column justify-content-center align-item-center">
-                    <div>
-                        <h3>Que fueron presentadas fuera del concurso en el reenombrado Salón de Paris</h3>
-                    </div>
+                    <h1 class="subtitulo text-start fira-sans-semibold">Que fueron presentadas fuera del concurso en el reenombrado Salón de Paris</h1>
                     <img src="img/paris-salon.jpg" class="img-fluid img-custom" alt="Imagen de prueba">
                 </div>
-                <div class ="col-lg-8 col-sm-12 d-flex flex-column justify-content-center align-item-center">
-                    <h3>Superando incluso el elogio obtenido años atrás por "Triste Herencia" o "Cosiendo la vela"</h3>
-                    <div class="d-lg-flex justify-content-center align-item-center flex-wrap">
-                        <div class="col-lg-4 col-sm-12 cuadro cuadro2 mt-2 me-lg-2">
-                            <div class="front rounded-4">
-                                <h1 class="text-white">Triste Herencia</h1>
+                <div class ="col-lg-6 col-sm-12 d-flex flex-column justify-content-center align-item-center">
+                    <h5 class="fira-sans-light subcabecera margen">Superando incluso el elogio obtenido años atrás por "Triste Herencia" o "Cosiendo la vela"</h5>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed titulo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Triste Herencia
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body d-flex justify-content-center align-item-center row">
+                              <img src="/img/triste_herencia.jpg" class="acordeon mb-3" alt="">
+                              Triste herencia, (1899) es una de las obras más importantes de Joaquín Sorolla, inspirada en los niños enfermos del hospital de San Juan de Dios bañándose en el mar bajo la vigilancia de un fraile. 
+                              Sorolla confesó en 1909 que sufrió profundamente al pintarla y prometió no abordar un tema similar nuevamente.
+                              Aunque estuvo a punto de abandonar la obra, el apoyo de amigos como Vicente Blasco Ibáñez lo impulsó a continuar.
                             </div>
-                            <div class="back rounded-4">
-                                <h1>B</h1>
-                            </div>
+                          </div>
                         </div>
-                        <div class="col-lg-4  col-sm-12 cuadro cuadro2 mt-2 ms-lg-2">
-                            <div class="front rounded-4">
-                                <h1 class="text-white">Cosiendo la vela</h1>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed titulo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Cosiendo la vela
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body d-flex justify-content-center align-item-center row">
+                                <img src="/img/cosiendo_la_vela.jpg" class="acordeon mb-3" alt="">
+                                Joaquín Sorolla (1863–1923) fue clave en la modernización del arte español. Aunque en España su obra Cosiendo la vela no fue bien recibida, obtuvo reconocimiento internacional al ser premiada en Múnich en 1897. Influido por el naturalismo y la modernidad que descubrió en París, 
+                                Sorolla desarrolló un estilo intuitivo y vibrante, centrado en la luz y el color, alejándose de los impresionistas en su enfoque emocional.Cosiendo la vela es un ejemplo de su habilidad para capturar escenas cotidianas con naturalidad y luminosidad, reflejando su compromiso por mostrar
+                                 la vida y las costumbres de su tierra con frescura y vitalidad.
                             </div>
-                            <div class="back rounded-4">
-                                <h1>B</h1>
-                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#57a5b5" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,101.3C480,107,600,181,720,218.7C840,256,960,256,1080,229.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </div>
     <!-- Capitulo 2 -->
@@ -137,12 +152,29 @@
                     <img src="img/paris-salon.jpg" class="img-fluid img-custom" alt="Imagen de prueba">
                 </div>
                 <div class="col-lg-4">
-                    <img src="img/paris-salon.jpg" class="img-fluid img-custom" alt="Imagen de prueba">
+                    <img src="img/Georges_Petit.png" class="img-fluid img-custom" alt="Imagen de prueba">
                 </div>
+            </div>
+            <div class="row">
+                Sorolla no ocultaba se desconfianza hacia los marchantes de arte
+            </div>
+            <div class="row m-2">
+                <div class=" col-lg-5 col-sm-12 card text-bg-dark carta p-3">
+                    <p class="card-text">
+                        Querido Pedro Gil,
+                        Te escribo con toda sinceridad. No puedo evitar sentir un miedo cerval ante esta exposición. ¿Y si no resulta tan exitosa como la imagino? 
+                        Cada detalle me inquieta, y Petit, con su aire de "lagarto", no ayuda a calmarme.
+                        Aun así, confío en que nuestro trabajo hable por nosotros. Al final, el arte siempre encuentra su camino. 
+                        <br> A pesar de mis recelos, estoy dispuesto a enfrentar este nuevo reto con la misma pasión que pongo en cada pincelada. Confío en que, al final, nuestro arte hablará por nosotros.
+                    </p>
+                </div>
+                <img src="/img/pedro_gil.jpg" class ="pedro_gil" alt="">
+                <div class="card">
 
+                </div>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#adccd2" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,101.3C480,107,600,181,720,218.7C840,256,960,256,1080,229.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 318"><path fill="#adccd2" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,101.3C480,107,600,181,720,218.7C840,256,960,256,1080,229.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </div>
     <!--Capitulo 3-->
     <div id="capitulo-3" class="capitulo3">

@@ -40,6 +40,25 @@ window.addEventListener('resize', () => {
         h5.outerHTML = `<h4 class="${h5.className}">${h5.innerHTML}</h4>`;
         h5 = document.querySelector('.subcabecera'); // Reasignamos para el nuevo elemento
     }
+   // Seleccionar todos los elementos de texto en los dos cuadros
+    let texto1 = document.querySelectorAll('.cuadro1 .texto');
+    let texto2 = document.querySelectorAll('.cuadro2 .texto');
+
+    texto1.forEach(texto => {
+        if (window.innerWidth <= 576 && texto.tagName === 'H6') {
+            texto.outerHTML = `<p class="${texto.className}">${texto.innerHTML}</p>`;
+        } else if (window.innerWidth > 576 && texto.tagName === 'P') {
+            texto.outerHTML = `<h6 class="${texto.className}">${texto.innerHTML}</h6>`;
+        }
+    });
+
+    texto2.forEach(texto => {
+        if (window.innerWidth <= 576 && texto.tagName === 'H6') {
+            texto.outerHTML = `<p class="${texto.className}">${texto.innerHTML}</p>`;
+        } else if (window.innerWidth > 576 && texto.tagName === 'P') {
+            texto.outerHTML = `<h6 class="${texto.className}">${texto.innerHTML}</h6>`;
+        }
+    });
 });
 //imagenes
 function expandCard(card,sectionId) {
