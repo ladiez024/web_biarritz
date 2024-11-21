@@ -222,6 +222,15 @@ body {
     .titulo,.subtitulo {
         font-size: 1.3rem; 
     }
+
+    .artes{
+        height: 50vh;
+        width: 45vw;
+    }
+
+    .card_expo{
+        width: 90vw;
+    }
 }
 @media (min-width: 321px) and (max-width: 376px) {
     .numero {
@@ -232,6 +241,15 @@ body {
     }
     .titulo{
         font-size: 1.5rem; 
+    }
+
+    .artes{
+        height: 50vh;
+        width: 45vw;
+    }
+
+    .card_expo{
+        width: 80vw;
     }
 }
 
@@ -247,6 +265,15 @@ body {
     .titulo{
         font-size: 1.8rem; 
     }
+
+    .artes{
+        height: 50vh;
+        width: 35vw;
+    }
+
+    .card_expo{
+        width: 80vw;
+    }
 }
 /* Para pantallas grandes (desktops) */
 @media (min-width: 1024px) {
@@ -260,6 +287,14 @@ body {
 
     .titulo{
         font-size: 5rem; /* Tamaño estándar para títulos en escritorios */
+    }
+
+    .artes{
+        height: 50vh;
+        width: 15vw;
+    }
+    .card_expo{
+        width: 50vw;
     }
 }
 
@@ -291,9 +326,4 @@ body {
 .acordeon{
     height: 40vh;
     width: 60vh;
-}
-
-.artes{
-    height: 33vh;
-    width: 20vh;
 }
