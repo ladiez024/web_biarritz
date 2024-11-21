@@ -43,6 +43,8 @@ window.addEventListener('resize', () => {
    // Seleccionar todos los elementos de texto en los dos cuadros
     let texto1 = document.querySelectorAll('.cuadro1 .texto');
     let texto2 = document.querySelectorAll('.cuadro2 .texto');
+    let texto3 = document.querySelectorAll('.cuadro3 .texto');
+    let texto4 = document.querySelectorAll('.cuadro4 .texto');
 
     texto1.forEach(texto => {
         if (window.innerWidth <= 576 && texto.tagName === 'H6') {
@@ -53,6 +55,22 @@ window.addEventListener('resize', () => {
     });
 
     texto2.forEach(texto => {
+        if (window.innerWidth <= 576 && texto.tagName === 'H6') {
+            texto.outerHTML = `<p class="${texto.className}">${texto.innerHTML}</p>`;
+        } else if (window.innerWidth > 576 && texto.tagName === 'P') {
+            texto.outerHTML = `<h6 class="${texto.className}">${texto.innerHTML}</h6>`;
+        }
+    });
+
+    texto3.forEach(texto => {
+        if (window.innerWidth <= 576 && texto.tagName === 'H6') {
+            texto.outerHTML = `<p class="${texto.className}">${texto.innerHTML}</p>`;
+        } else if (window.innerWidth > 576 && texto.tagName === 'P') {
+            texto.outerHTML = `<h6 class="${texto.className}">${texto.innerHTML}</h6>`;
+        }
+    });
+
+    texto4.forEach(texto => {
         if (window.innerWidth <= 576 && texto.tagName === 'H6') {
             texto.outerHTML = `<p class="${texto.className}">${texto.innerHTML}</p>`;
         } else if (window.innerWidth > 576 && texto.tagName === 'P') {

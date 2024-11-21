@@ -82,6 +82,13 @@ body {
     background-image: url('../img/verano.jpg');
 }
 
+.cuadro3 .front {
+    background-image: url('../img/Georges_Petit.png');
+}
+.cuadro4 .front {
+    background-image: url('../img/pedro_gil.jpg');
+}
+
 .cuadro .back {
     background-color: rgb(251, 251, 251);
     font-size: 0.7rem;
@@ -207,7 +214,7 @@ body {
 /* Para pantallas pequeñas (375px específicamente) */
 @media (max-width: 321px) {
     .numero {
-        font-size: 2.5rem; /* Ajusta específicamente para 375px */
+        font-size: 2rem; /* Ajusta específicamente para 375px */
     }
     .numero_sep {
         font-size: 4.4rem;
