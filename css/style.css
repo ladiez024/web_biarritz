@@ -101,6 +101,18 @@ font-style: normal;
     height: 50vh;
     width: 10vw;
 }
+.img-item{
+    background-image: url('../img/verano.jpg');
+    background-size: cover; /* Escala la imagen para cubrir todo el elemento */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+}
+.img2-item{
+    background-image: url('../img/galeria_petit.jpg');
+    background-size: cover; /* Escala la imagen para cubrir todo el elemento */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita repeticiones */
+}
 @media (min-width: 1024px) {
 
     .numero{
@@ -240,9 +252,11 @@ font-style: normal;
 .cuadro1 .front {
     background-image: url('../img/sol_de_tarde.jpg');
 }
+
 .cuadro2 .front {
     background-image: url('../img/verano.jpg');
 }
+
 .cuadro3 .front {
     background-image: url('../img/Georges_Petit.png');
 }
