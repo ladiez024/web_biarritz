@@ -20,87 +20,151 @@ body {
 .obra1{
     background-color: #523b30;
 }
- /* Estilo personalizado para limitar la altura */
-.img-custom {
-    height: 35vh; /* Altura fija del 40% del viewport */
-    object-fit: cover; /* Ajusta la imagen para llenar el espacio sin distorsión */
-    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+/***************************************************************************/
+
+/*LETRAS*/
+.fira-sans-thin {
+font-family: "Fira Sans", sans-serif;
+font-weight: 100;
+font-style: normal;
 }
 
-@media (max-width: 576px) {
-    .margen{
-        margin-top: 1rem; /* Ajusta el valor como necesites */
-    }
+.fira-sans-extralight {
+font-family: "Fira Sans", sans-serif;
+font-weight: 200;
+font-style: normal;
 }
-@media (max-width: 576px) {
-    .cuadro{
-        height: 40vh;
-    }
+
+.fira-sans-light {
+font-family: "Fira Sans", sans-serif;
+font-weight: 300;
+font-style: normal;
+}
+
+.fira-sans-regular {
+font-family: "Fira Sans", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.fira-sans-medium {
+font-family: "Fira Sans", sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+.fira-sans-semibold {
+font-family: "Fira Sans", sans-serif;
+font-weight: 600;
+font-style: normal;
+}
+  
+.fira-sans-bold {
+font-family: "Fira Sans", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+.fira-sans-extrabold {
+font-family: "Fira Sans", sans-serif;
+font-weight: 800;
+font-style: normal;
+}
+  
+.fira-sans-black {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.numero, .numero_sep,.titulo,.subtitulo{
+    font-family: 'Bebas Neue', sans-serif; /* Incluye una fuente de respaldo como sans-serif */
+}
+
+.numero,.subtitulo{
+    color:#fcac3c;
+}
+.subtitulo{
+    font-size: 2.3rem;
+}
+.numero_sep{
+    color:#fcd48c;
+}
+.sorolla{
+    color:#07517f;
+}
+
+/*Introducción*/
+.menu{
+    height: 50vh;
+}
+.menu-item{
+    height: 50vh;
+    width: 10vw;
 }
 @media (min-width: 1024px) {
-    .cuadro{
-        height: 60vh;
+
+    .numero{
+        font-size: 12rem; 
+    }
+    .numero_sep {
+        font-size: 14rem;
+    }
+    .titulo{
+        font-size: 5rem; 
     }
 }
-.cuadro {
-    position: relative;
-    perspective: 1000px; /* Asegura que la perspectiva se aplique al elemento principal */
+
+@media(max-width:1024px) and (min-width:576px){
+
+    .numero {
+        font-size: 8rem;
+    }
+    .numero_sep {
+        font-size: 9rem;
+    }
+    .titulo{
+        font-size: 3rem;
+    }
 }
 
-.cuadro div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden; /* Esconde el lado opuesto durante la rotación */
-    transition: transform 1s; /* Cambié 'transition' a 'transform' para asegurar una transición suave */
+@media (min-width: 376px) and (max-width: 576px) {
+
+    .numero {
+        font-size: 3.5rem;
+    }
+    .numero_sep {
+        font-size: 6rem;
+    }
+    .titulo{
+        font-size: 1.8rem; 
+    }
 }
 
-.cuadro .front {
-    transform: rotateY(0deg);
-    background-size: cover;
-    background-position: center;
+@media (min-width: 321px) and (max-width: 376px) {
+
+    .numero {
+        font-size: 3rem; 
+    }
+    .numero_sep {
+        font-size: 5rem;
+    } 
+    .titulo{
+        font-size: 1.5rem; 
+    }
 }
 
-.cuadro .front h1 {
-    position: absolute; /* Permite ubicar el texto dentro del contenedor */
-    bottom: 10px; /* Ajusta según el espacio que quieras desde abajo */
-    left: 10px; /* Ajusta según el espacio que quieras desde la izquierda */
-    margin: 0;
-    font-size: 1.5rem; /* Tamaño del texto */
-    color:white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para mejor contraste */
-}
+@media (max-width: 321px) {
 
-.cuadro1 .front {
-    background-image: url('../img/sol_de_tarde.jpg');
-}
+    .numero {
+        font-size: 2.5rem;
+    }
+    .numero_sep {
+        font-size: 4.4rem;
+    }
+    .titulo,.subtitulo {
+        font-size: 1.3rem; 
+    }
 
-.cuadro2 .front {
-    background-image: url('../img/verano.jpg');
-}
-
-.cuadro3 .front {
-    background-image: url('../img/Georges_Petit.png');
-}
-.cuadro4 .front {
-    background-image: url('../img/pedro_gil.jpg');
-}
-
-.cuadro .back {
-    background-color: rgb(251, 251, 251);
-    font-size: 0.7rem;
-    transform: rotateY(180deg); /* La cara posterior comienza en 180deg, invisible inicialmente */
-}
-
-.cuadro.active .front {
-    transform: rotateY(180deg); /* Rota la cara frontal al activarse */
-}
-
-.cuadro.active .back {
-    transform: rotateY(0deg); /* Muestra la cara trasera al activarse */
 }
 
 /*ANIMACIONES*/
@@ -139,184 +203,100 @@ body {
     animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-/*LETRAS*/
-.fira-sans-thin {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-  }
-  
-  .fira-sans-extralight {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .fira-sans-light {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .fira-sans-regular {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .fira-sans-medium {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .fira-sans-semibold {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .fira-sans-bold {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .fira-sans-extrabold {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  .fira-sans-black {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-  }
-.numero, .numero_sep,.titulo,.subtitulo{
-    font-family: 'Bebas Neue', sans-serif; /* Incluye una fuente de respaldo como sans-serif */
+/*Capitulo 1*/
+
+.cuadro {
+    position: relative;
+    perspective: 1000px; /* Asegura que la perspectiva se aplique al elemento principal */
 }
 
-.numero,.subtitulo{
-    color:#fcac3c;
-}
-.subtitulo{
-    font-size: 2.3rem;
-}
-.numero_sep{
-    color:#fcd48c;
-}
-.sorolla{
-    color:#07517f;
+.cuadro div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden; /* Esconde el lado opuesto durante la rotación */
+    transition: transform 1s; /* Cambié 'transition' a 'transform' para asegurar una transición suave */
 }
 
-/*INTRODUCCION*/
-/* Para pantallas pequeñas (375px específicamente) */
-@media (max-width: 321px) {
-    .numero {
-        font-size: 2.5rem; /* Ajusta específicamente para 375px */
-    }
-    .numero_sep {
-        font-size: 4.4rem;
-    }
-    .titulo,.subtitulo {
-        font-size: 1.3rem; 
-    }
-
-    .artes{
-        height: 50vh;
-        width: 45vw;
-    }
-
-    .card_expo{
-        width: 90vw;
-    }
-}
-@media (min-width: 321px) and (max-width: 376px) {
-    .numero {
-        font-size: 3rem; /* Ajusta específicamente para 375px */
-    }
-    .numero_sep {
-        font-size: 5rem;
-    }
-    .titulo{
-        font-size: 1.5rem; 
-    }
-
-    .artes{
-        height: 50vh;
-        width: 45vw;
-    }
-
-    .card_expo{
-        width: 80vw;
-    }
+.cuadro .front {
+    transform: rotateY(0deg);
+    background-size: cover;
+    background-position: center;
 }
 
-/* Para pantallas pequeñas pero mayores a 375px */
-@media (min-width: 376px) and (max-width: 576px) {
-    .numero {
-        font-size: 3.5rem;
-    }
-    .numero_sep {
-        font-size: 6rem;
-    }
-
-    .titulo{
-        font-size: 1.8rem; 
-    }
-
-    .artes{
-        height: 50vh;
-        width: 35vw;
-    }
-
-    .card_expo{
-        width: 80vw;
-    }
-}
-/* Para pantallas grandes (desktops) */
-@media (min-width: 1024px) {
-    .numero{
-        font-size: 12rem; /* Tamaño grande para pantallas de escritorio */
-    }
-
-    .numero_sep {
-        font-size: 14rem;
-    }
-
-    .titulo{
-        font-size: 5rem; /* Tamaño estándar para títulos en escritorios */
-    }
-
-    .artes{
-        height: 50vh;
-        width: 15vw;
-    }
-    .card_expo{
-        width: 50vw;
-    }
+.cuadro .front h1 {
+    position: absolute; /* Permite ubicar el texto dentro del contenedor */
+    bottom: 10px; /* Ajusta según el espacio que quieras desde abajo */
+    left: 10px; /* Ajusta según el espacio que quieras desde la izquierda */
+    margin: 0;
+    font-size: 1.5rem; /* Tamaño del texto */
+    color:white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para mejor contraste */
 }
 
-.menu{
-    height: 50vh;
+.cuadro1 .front {
+    background-image: url('../img/sol_de_tarde.jpg');
 }
-.menu-item{
-    height: 50vh;
-    width: 10vw;
-}
-.img-item{
+.cuadro2 .front {
     background-image: url('../img/verano.jpg');
-    background-size: cover; /* Escala la imagen para cubrir todo el elemento */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita repeticiones */
 }
-.img2-item{
-    background-image: url('../img/galeria_petit.jpg');
-    background-size: cover; /* Escala la imagen para cubrir todo el elemento */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita repeticiones */
+.cuadro3 .front {
+    background-image: url('../img/Georges_Petit.png');
 }
+.cuadro4 .front {
+    background-image: url('../img/pedro_gil.jpg');
+}
+
+.cuadro .back {
+    background-color: rgb(251, 251, 251);
+    font-size: 0.7rem;
+    transform: rotateY(180deg); /* La cara posterior comienza en 180deg, invisible inicialmente */
+}
+
+.cuadro.active .front {
+    transform: rotateY(180deg); /* Rota la cara frontal al activarse */
+}
+
+.cuadro.active .back {
+    transform: rotateY(0deg); /* Muestra la cara trasera al activarse */
+}
+/* Estilo personalizado para limitar la altura */
+.img-custom {
+    height: 35vh; /* Altura fija del 40% del viewport */
+    object-fit: cover; /* Ajusta la imagen para llenar el espacio sin distorsión */
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+}
+@media (min-width: 1024px) {
+    .cuadro{
+        height: 60vh;
+    }
+}
+
+@media(max-width:1024px) and (min-width:576px){
+    .cuadro{
+        height: 60vh;
+    }
+    .img-custom{
+        height: 65vh; /* Altura fija del 40% del viewport */
+        object-fit: cover; /* Ajusta la imagen para llenar el espacio sin distorsión */
+        width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+        margin-bottom: 1rem; /* Ajusta el valor como necesites */
+    }
+}
+
+@media(max-width: 576px) {
+    .cuadro{
+        height: 40vh;
+    }
+    .margen{
+        margin-top: 1rem; /* Ajusta el valor como necesites */
+    }
+}
+
+/*Capitulo 2*/
 
 .pedro_gil{
     width: 20vw;
@@ -326,4 +306,69 @@ body {
 .acordeon{
     height: 40vh;
     width: 60vh;
+}
+
+@media (min-width: 1024px) {
+    .card_expo{
+        width: 50vw;
+    }
+    .artes{
+        height: 50vh;
+        width: 15vw;
+    }
+    .nombre_fotos{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:1024px) and (min-width:576px){
+    .card_expo{
+        width: 80vw;
+    }
+    .artes{
+        height: 50vh;
+        width: 20vw;
+    }
+    .margen{
+        margin-top: 1rem; /* Ajusta el valor como necesites */
+    }
+}
+
+@media (min-width: 376px) and (max-width: 576px) {
+    .card_expo{
+        width: 80vw;
+    }
+    .artes{
+        height: 50vh;
+        width: 35vw;
+    }
+    .nombre_fotos{
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+    .card_expo{
+        width: 80vw;
+    }
+    .artes{
+        height: 45vh;
+        width: 35vw;
+    }
+    .nombre_fotos{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 321px) {
+    .card_expo{
+        width: 90vw;
+    }
+    .artes{
+        height: 45vh;
+        width: 38vw;
+    }
+    .nombre_fotos{
+        font-size: 1.2rem;
+    }
 }

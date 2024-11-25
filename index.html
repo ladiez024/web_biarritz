@@ -21,56 +21,57 @@
 </head>
 <body>
     <!-- Intro -->
-    <div class="container-fluid">
-        <div class = "row">
-            <div class = "col-4 mt-4">
-                <h1 class="slide-top numero">1</h1>
-                <h1 class="slide-top numero">9</h1>
-                <h1 class="slide-top numero">0</h1>
-                <h1 class="slide-top numero">6</h1>
+    <div>
+        <div class="container-fluid">
+            <div class = "row">
+                <div class = "col-4 mt-4">
+                    <h1 class="slide-top numero">1</h1>
+                    <h1 class="slide-top numero">9</h1>
+                    <h1 class="slide-top numero">0</h1>
+                    <h1 class="slide-top numero">6</h1>
+                </div>
+                <h1  class="col-1 numero_sep mt-1">I</h1>
+                <div class = "col-7 mt-3">
+                    <h1 class="titulo text-secondary">PRIMERA EXPOSICIÓN</h1>
+                    <h1 class="titulo text-secondary">DE <bg class="sorolla">SOROLLA</bg> EN SOLITARIO</h1>
+                </div>
             </div>
-            <h1  class="col-1 numero_sep mt-1">I</h1>
-            <div class = "col-7 mt-3">
-                <h1 class="titulo text-secondary">PRIMERA EXPOSICIÓN</h1>
-                <h1 class="titulo titulo text-secondary">DE <bg class="sorolla">SOROLLA</bg> EN SOLITARIO</h1>
+            <div class="row d-flex justify-content-center align-item-center menu">
+                <div class="card text-bg-dark menu-item img-item rounded-pill" onclick="expandCard(this, 'capitulo-1')">
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                    <h6 class="card-title display-6"><i class="bi bi-1-circle-fill"></i></h6>
+                    <h6 class="display-6 text d-none">Introducción</h6>
+                    </div>
+                </div>
+                <div class="card text-bg-dark menu-item img2-item rounded-pill" onclick="expandCard(this, 'capitulo-2')">
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                    <h6 class="card-title display-6"><i class="bi bi-2-circle-fill"></i></h6>
+                    <h6 class="display-6 text d-none">Antes de la exposición</h6>
+                    </div>
+                </div>
+                <div class="card text-bg-dark menu-item rounded-pill" onclick="expandCard(this , 'capitulo-3')">
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                    <h6 class="card-title display-6"><i class="bi bi-3-circle-fill"></i></h6>
+                    <h6 class="display-6 text d-none">Exposición</h6>
+                    </div>
+                </div>
+                <div class="card text-bg-dark menu-item rounded-pill" onclick="expandCard(this , 'capitulo-4')">
+                    <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
+                    <h6 class="card-title display-6"><i class="bi bi-4-circle-fill"></i></h6>
+                    <h6 class="display-6 text d-none">Reconocimiento</h6>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-center align-item-center menu">
-            <div class="card text-bg-dark menu-item img-item rounded-pill" onclick="expandCard(this, 'capitulo-1')">
-                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                  <h6 class="card-title display-6"><i class="bi bi-1-circle-fill"></i></h6>
-                  <h6 class="display-6 text d-none">Introducción</h6>
-                </div>
-            </div>
-            <div class="card text-bg-dark menu-item img2-item rounded-pill" onclick="expandCard(this, 'capitulo-2')">
-                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                  <h6 class="card-title display-6"><i class="bi bi-2-circle-fill"></i></h6>
-                  <h6 class="display-6 text d-none">Antes de la exposición</h6>
-                </div>
-            </div>
-            <div class="card text-bg-dark menu-item rounded-pill" onclick="expandCard(this , 'capitulo-3')">
-                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                  <h6 class="card-title display-6"><i class="bi bi-3-circle-fill"></i></h6>
-                  <h6 class="display-6 text d-none">Exposición</h6>
-                </div>
-            </div>
-            <div class="card text-bg-dark menu-item rounded-pill" onclick="expandCard(this , 'capitulo-4')">
-                <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
-                  <h6 class="card-title display-6"><i class="bi bi-4-circle-fill"></i></h6>
-                  <h6 class="display-6 text d-none">Reconocimiento</h6>
-                </div>
-            </div>
-        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 318"><path fill="#3b92a3" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,101.3C480,107,600,181,720,218.7C840,256,960,256,1080,229.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#3b92a3" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,101.3C480,107,600,181,720,218.7C840,256,960,256,1080,229.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-
     <!-- Capitulo 1 -->
     <div id="capitulo-1" class="capitulo1">
         <div class="container-fluid">
             <h1 class="text-white text-center fira-sans-semibold cabecera">El exito no era algo nuevo para Sorolla</h1>
             <h5 class="text-center fira-sans-light subcabecera">Pero su impulso definitivo provino de las magnificas críticas de estas obras</h5>
             <div class="row d-flex justify-content-center align-item-center mt-3">
-                <div class="col-lg-5 col-sm-12">
+                <div class="col-lg-5 col-md-5 col-sm-12">
                     <div class="cuadro cuadro1">
                         <div class="front rounded-4">
                             <h1 class="fira-sans-semibold">Sol de la tarde <i class="bi bi-arrow-right-circle-fill"></i></h1>
@@ -82,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5 col-sm-12 margen">
+                <div class="col-lg-5 col-md-5 col-sm-12 margen">
                     <div class="cuadro cuadro2">
                         <div class="front rounded-4">
                             <h1 class="fira-sans-semibold">Verano <i class="bi bi-arrow-right-circle-fill"></i></h1>
@@ -139,16 +140,16 @@
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path fill="#57a5b5" fill-opacity="1" d="M0,224L60,192C120,160,240,96,360,101.3C480,107,600,181,720,218.7C840,256,960,256,1080,229.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
     </div>
-    <!-- Capitulo 2 -->
+    <!-- Capitulo 2-->
     <div id="capitulo-2" class="capitulo2">
         <div class="container-fluid ">
             <h1 class="text-white text-center fira-sans-semibold cabecera">Sorolla sabía que esta oportunidad no solo era un reconocimiento a su arte, sino también el comienzo de una etapa crucial en su carrera.</h1>
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-md-8">
                     <h4 class=" text-center fira-sans-light subcabecera">La exposición se realizó en la Galeria Georges Petit</h4>
                     <img src="img/galeria_petit.jpg" class="img-fluid" alt="Imagen de prueba">
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-4">
                     <div class="cuadro cuadro3 margen">
                         <div class="front rounded-4">
                             <h1 class="fira-sans-semibold">Georges Petit <i class="bi bi-arrow-right-circle-fill"></i></h1>
@@ -163,7 +164,7 @@
                 </div>
             </div>
             <div class="row m-2 d-flex justify-content-center align-items-center">
-                <div class=" col-lg-5 col-sm-12">
+                <div class=" col-lg-5 col-md-6 col-sm-12">
                     <h6 class="subtitulo text-start fira-sans-semibold">  Sorolla no ocultaba su desconfianza hacia los marchantes de arte</h6>
                     <div class="card text-bg-dark carta p-3">
                         <p class="card-text">
@@ -175,7 +176,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-5">
                     <div class="cuadro cuadro4 margen">
                         <div class="front rounded-4">
                             <h1 class="fira-sans-semibold">Pedro Gil <i class="bi bi-arrow-right-circle-fill"></i></h1>
@@ -198,22 +199,21 @@
                         , lo que reflejaba el creciente reconocimiento de Sorolla.</p>
                     </div>
                 </div>
-                <div class="col-lg-5 col-sm-12 margen">
-                    <div class="d-flex justify-content-center align-item-center">
+                <div class="col-lg-5 col-md-5 col-sm-12 margen">
+                    <div class="d-flex justify-content-center align-item-center margen">
                         <div class="d-flex flex-column justify-content-center align-item-center">
                         <img src="img/auguste-rodin.jpg"  class="border border-3 rounded-pill artes me-2" alt="">
-                        <h4 class="text-center fira-sans-extrabold subcabecera text-white">Aguste Rodin</h4>
+                        <p class="text-center fira-sans-bold nombre_fotos text-white">Aguste Rodin</p>
                         </div>
                         <div  class="d-flex flex-column justify-content-center align-item-center">
                         <img src="img/monet.jpg" class="border border-3 rounded-pill artes" alt="">
-                        <h4 class=" text-center fira-sans-extrabold subcabecera text-white">Claude Monet</h4>
+                        <p class=" text-center fira-sans-bold nombre_fotos text-white">Claude Monet</p>
                         </div>
                     </div>
-                   <!-- Segunda fila con una imagen centrada -->
                     <div class="d-flex justify-content-center mt-3">
                         <div class="d-flex flex-column justify-content-center align-items-center">
                             <img src="img/Carolus-Duran.jpg" class="border border-3 rounded-pill artes" alt="">
-                            <h4 class="text-center fira-sans-extrabold subcabecera text-white">Carolus-Duran</h4>
+                            <p class="text-center fira-sans-bold nombre_fotos text-white">Carolus-Duran</p>
                         </div>
                     </div>         
                 </div>
