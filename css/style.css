@@ -76,7 +76,7 @@ font-style: normal;
     font-weight: 900;
     font-style: normal;
 }
-.numero, .numero_sep,.titulo,.subtitulo{
+.numero, .numero_sep,.titulo,.subtitulo,.texto-movil{
     font-family: 'Bebas Neue', sans-serif; /* Incluye una fuente de respaldo como sans-serif */
 }
 
@@ -92,6 +92,39 @@ font-style: normal;
 .sorolla{
     color:#07517f;
 }
+/*Portada*/
+.explicacion{
+    background-color: rgb(252, 212, 140,0.5);
+}
+ /* Animación para mover el texto a la izquierda */
+ @keyframes moverIzquierda {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Estilo del contenedor */
+  .contenedor {
+    overflow: hidden;
+    width: 100%; /* Ajusta el ancho del contenedor */
+  }
+
+  /* Estilo del texto y la animación */
+  .texto-movil {
+    display: inline-block;
+    font-size: 4rem; /* Puedes cambiar el tamaño del texto */
+    font-weight: bold;
+    white-space: nowrap;
+    animation: moverIzquierda 40s linear infinite; /* 10s es la duración, ajusta según necesites */
+  }
+   /* Repetir el texto de forma continua */
+   .texto-movil span {
+    display: inline-block;
+    padding-right: 50px; /* Añadimos un espacio entre cada repetición */
+  }
 
 /*Introducción*/
 .menu{
