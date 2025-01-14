@@ -1,0 +1,9 @@
+
+[build]
+  functions = "functions"  # Configura la carpeta de funciones serverless
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/app"  # Redirige todas las solicitudes a la función `app`
+  status = 200
+  force = true
