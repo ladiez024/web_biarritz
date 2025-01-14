@@ -3,15 +3,15 @@ const path = require('path');
 const router = express.Router();
 // Definir rutas
 router.get('/', (req, res) => {
-    res.render('index.html');
+    res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 router.get('/menu', (req, res) => {
-    res.render('menu.html');
+    res.sendFile(path.join(__dirname, '../public/menu.html'));
 });
 
 router.get('/biarritz', (req, res) => {
-    res.render('biarritz.html');
+    res.sendFile(path.join(__dirname, '../public/biarritz.html'));
 });
 
 module.exports = router;
