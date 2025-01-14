@@ -3,11 +3,11 @@ const path = require('path');
 const router = express.Router();
 // Definir rutas
 router.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+    res.sendFile(path.join(__dirname, '../public/html/index.html'));
 });
 
 router.get('/menu', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/menu.html'));
+    res.sendFile(path.join(__dirname, '../public/html/menu.html'));
 });
 
 router.get('/biarritz', (req, res) => {
