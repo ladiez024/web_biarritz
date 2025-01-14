@@ -11,7 +11,7 @@ router.get('/menu', (req, res) => {
 });
 
 router.get('/biarritz', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/biarritz.html'));
+    res.sendFile(path.join(__dirname, '../public/html/biarritz.html'));
 });
 
 module.exports = router;
